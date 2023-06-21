@@ -1,0 +1,17 @@
+{
+    "name": "pieterhielkema/firebase-messaging-php",
+    "description": "Php wrapper for firebase messaging api",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Pieterhielkema\\FirebaseMessagingPhp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pieter Hielkema",
+            "email": "pieter@codesound.nl"
+        }
+    ],
+    "require": {}
+}
