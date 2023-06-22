@@ -67,7 +67,7 @@ class FirebaseMessaging
     }
 
     public function unsubscribeFromTopic(string|array $fcm_token, string $topic) {
-        $url = $this->topicBaseUrl . '/iid/v1:batchAdd';
+        $url = $this->topicBaseUrl . '/iid/v1:batchRemove';
         $this->client->post($url, [
             RequestOptions::HEADERS => [
                 'Authorization' => 'Bearer ' . $this->apiKey
