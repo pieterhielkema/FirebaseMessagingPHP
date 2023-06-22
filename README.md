@@ -25,3 +25,15 @@ Send message to topic
 $firebase->sendMessageToTopic('TOPIC', 'TITLE', 'BODY');
 ```
 _Can also be array of topics_
+
+Subscribe to topic
+```php
+$firebase->subscribeToTopic('FCM_TOKEN', 'TOPIC');
+```
+_Can also be array of tokens_
+
+Unsubscribe from topic
+```php
+$firebase->unsubscribeFromTopic('FCM_TOKEN', 'TOPIC');
+```
+_Can also be array of tokens_

@@ -65,4 +65,17 @@ class FirebaseMessaging
             ]
         ]);
     }
+
+    public function unsubscribeFromTopic(string|array $fcm_token, string $topic) {
+        $url = $this->topicBaseUrl . '/iid/v1:batchAdd';
+        $this->client->post($url, [
+            RequestOptions::HEADERS => [
+                'Authorization' => 'Bearer ' . $this->apiKey
+            ],
+            RequestOptions::JSON => [
+                'to' => $topic,
+                'registration_tokens' => is_array($fcm_token) ? $fcm_token : [$fcm_token]
+            ]
+        ]);
+    }
 }
