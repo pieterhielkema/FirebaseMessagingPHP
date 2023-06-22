@@ -1,3 +1,5 @@
+<img src="firebase.png" height="50">
+
 # FirebaseMessagingPHP
 Firebase Cloud Messaging PHP Client
 
